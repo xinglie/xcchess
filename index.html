@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>XCChess</title>
+        <style>html,body{margin:0;padding:0;}.c{display:flex;justify-content:center;margin:50px}@keyframes r{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.logo{width:60px;position:fixed;left:calc(50% - 35px);top:calc(50% - 35px);animation:r 2s linear infinite}</style>
+    </head>
+    <body>
+        <div id="app" class="c"><svg class="logo" viewBox="0 0 1024 1024"><path d="M853.344 512c0 187.744-153.6 341.344-341.344 341.344S170.656 699.744 170.656 512 324.256 170.656 512 170.656V85.312c-234.656 0-426.656 192-426.656 426.656s192 426.656 426.656 426.656 426.656-192 426.656-426.656h-85.344z"/></svg></div>
+        <script src="dist/xcchess.js?v=202312151528"></script>
+        <script type="module">
+            xcchess.setup({
+                rootId:'app',
+                size:45
+            });
+        </script>
+    </body>
+</html>
+
